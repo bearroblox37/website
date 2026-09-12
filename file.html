@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IT CLUB - Câu lạc bộ Tin học</title>
+
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta5AxI4dN6m7T3bL8G0c5nQ4f3bK3c2A6J5gQ5F5F5F5A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    >
+
+    <!-- File CSS chính -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <!-- Logo -->
+            <a href="#trang-chu" class="logo">
+                <span class="logo-icon">
+                    <i class="fa-solid fa-code"></i>
+                </span>
+                <span>IT CLUB</span>
+            </a>
+
+            <!-- Checkbox điều khiển menu trên mobile -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!-- Nút hamburger -->
+            <label for="menu-toggle" class="menu-button" aria-label="Mở menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <!-- Menu điều hướng -->
+            <nav class="main-nav">
+                <a href="#trang-chu">Trang chủ</a>
+                <a href="#gioi-thieu">Giới thiệu</a>
+                <a href="#lich-hoat-dong">Lịch hoạt động</a>
+                <a href="#dang-ky">Đăng ký</a>
+
+                <a href="#dang-ky" class="btn btn-primary nav-cta">
+                    <span>Tham gia ngay</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Banner -->
+        <section class="hero" id="trang-chu">
+            <div class="hero-glow hero-glow-one"></div>
+            <div class="hero-glow hero-glow-two"></div>
+
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="eyebrow">
+                        <i class="fa-solid fa-circle-nodes"></i>
+                        Cộng đồng công nghệ dành cho sinh viên
+                    </span>
+
+                    <h1>
+                        Câu Lạc Bộ
+                        <span>Tin Học</span>
+                    </h1>
+
+                    <p>
+                        Nơi kết nối đam mê công nghệ, phát triển kỹ năng
+                        và cùng nhau tạo nên những sản phẩm sáng tạo.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#dang-ky" class="btn btn-light">
+                            <span>Đăng ký ngay</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#gioi-thieu" class="btn btn-outline-light">
+                            <span>Tìm hiểu thêm</span>
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <strong>500+</strong>
+                            <span>Thành viên</span>
+                        </div>
+
+                        <div class="stat-item">
+                            <strong>30+</strong>
+                            <span>Dự án</span>
+                        </div>
+
+                        <div class="stat-item">
+                            <strong>10+</strong>
+                            <span>Sự kiện mỗi năm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-bar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="code-content">
+                            <p>
+                                <span class="code-purple">const</span>
+                                <span class="code-blue">club</span>
+                                <span class="code-white">=</span>
+                                <span class="code-green">"IT CLUB"</span>
+                            </p>
+
+                            <p>
+                                <span class="code-purple">function</span>
+                                <span class="code-yellow">connect</span>
+                                <span class="code-white">() {</span>
+                            </p>
+
+                            <p class="code-indent">
+                                <span class="code-purple">return</span>
+                                <span class="code-green">"Learn, Build, Grow"</span>
+                            </p>
+
+                            <p>
+                                <span class="code-white">}</span>
+                            </p>
+
+                            <p class="code-comment">
+                                // Let's build the future together
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-one">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <span>Learn & Build</span>
+                    </div>
+
+                    <div class="floating-card floating-card-two">
+                        <i class="fa-solid fa-rocket"></i>
+                        <span>Grow Together</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#gioi-thieu" class="scroll-down" aria-label="Cuộn xuống">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- Giới thiệu -->
+        <section class="section intro-section" id="gioi-thieu">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">Về chúng tôi</span>
+                    <h2>Cùng nhau kiến tạo <span>tương lai số</span></h2>
+                    <p>
+                        IT CLUB là môi trường học tập, chia sẻ và kết nối dành
+                        cho những bạn trẻ yêu thích công nghệ.
+                    </p>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3>Sứ mệnh</h3>
+                        <p>
+                            Xây dựng một cộng đồng học tập năng động, nơi mọi
+                            thành viên có thể phát triển năng lực công nghệ.
+                        </p>
+                        <a href="#dang-ky" class="card-link">
+                            Khám phá thêm <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3>Tầm nhìn</h3>
+                        <p>
+                            Trở thành câu lạc bộ công nghệ hàng đầu, kết nối
+                            sinh viên với những xu hướng và cơ hội mới.
+                        </p>
+                        <a href="#lich-hoat-dong" class="card-link">
+                            Xem hoạt động <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3>Giá trị cốt lõi</h3>
+                        <p>
+                            Học hỏi không ngừng, chia sẻ kiến thức, làm việc
+                            nhóm và tạo ra giá trị tích cực cho cộng đồng.
+                        </p>
+                        <a href="#dang-ky" class="card-link">
+                            Tham gia ngay <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lịch hoạt động -->
+        <section class="section schedule-section" id="lich-hoat-dong">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">Hoạt động nổi bật</span>
+                    <h2>Lịch hoạt động <span>tháng này</span></h2>
+                    <p>
+                        Cùng tham gia các buổi học, workshop và hoạt động
+                        thực hành thú vị tại IT CLUB.
+                    </p>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-date">
+                            <strong>05</strong>
+                            <span>THÁNG 10</span>
+                        </div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+                            <span class="event-tag">Workshop</span>
+                            <h3>Nhập môn lập trình Web</h3>
+
+                            <div class="event-meta">
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    08:00 - 10:00
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Phòng A101
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-date">
+                            <strong>12</strong>
+                            <span>THÁNG 10</span>
+                        </div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+                            <span class="event-tag">Chia sẻ</span>
+                            <h3>Hành trình trở thành Developer</h3>
+
+                            <div class="event-meta">
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    14:00 - 16:00
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Hội trường B
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-date">
+                            <strong>19</strong>
+                            <span>THÁNG 10</span>
+                        </div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+                            <span class="event-tag">Thực hành</span>
+                            <h3>Xây dựng Landing Page hiện đại</h3>
+
+                            <div class="event-meta">
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    08:30 - 11:30
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Phòng Lab 02
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-date">
+                            <strong>26</strong>
+                            <span>THÁNG 10</span>
+                        </div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+                            <span class="event-tag">Cuộc thi</span>
+                            <h3>Mini Hackathon: Code For Future</h3>
+
+                            <div class="event-meta">
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    07:30 - 17:00
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Không gian sáng tạo
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form đăng ký -->
+        <section class="section register-section" id="dang-ky">
+            <div class="container register-wrapper">
+                <div class="register-info">
+                    <span class="section-label">Sẵn sàng tham gia?</span>
+                    <h2>Trở thành một phần của <span>IT CLUB</span></h2>
+                    <p>
+                        Đăng ký ngay hôm nay để gặp gỡ những người cùng đam mê,
+                        học hỏi kỹ năng mới và tham gia các dự án thực tế.
+                    </p>
+
+                    <ul class="benefit-list">
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Mở rộng kiến thức và kỹ năng công nghệ
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Kết nối với cộng đồng cùng đam mê
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Tham gia các dự án và cuộc thi thực tế
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="register-form" action="#" method="post">
+                    <div class="form-header">
+                        <h3>Đăng ký thành viên</h3>
+                        <p>Hãy điền thông tin bên dưới để bắt đầu.</p>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fullname">Họ và tên</label>
+                            <div class="input-wrapper">
+                                <i class="fa-regular fa-user"></i>
+                                <input
+                                    type="text"
+                                    id="fullname"
+                                    name="fullname"
+                                    placeholder="Nguyễn Văn A"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <div class="input-wrapper">
+                                <i class="fa-regular fa-envelope"></i>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="email@example.com"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-phone"></i>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="0123 456 789"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="department">Lớp/Khoa</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <input
+                                    type="text"
+                                    id="department"
+                                    name="department"
+                                    placeholder="CNTT K45"
+                                    required
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reason">Lý do tham gia</label>
+                        <div class="input-wrapper textarea-wrapper">
+                            <i class="fa-regular fa-comment-dots"></i>
+                            <textarea
+                                id="reason"
+                                name="reason"
+                                rows="4"
+                                placeholder="Chia sẻ một chút về lý do bạn muốn tham gia..."
+                                required
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="terms" required>
+                        <span class="custom-checkbox"></span>
+                        <span>
+                            Tôi đồng ý với
+                            <a href="#dieu-khoan">điều khoản hoạt động</a>
+                            của câu lạc bộ.
+                        </span>
+                    </label>
+
+                    <button type="submit" class="btn btn-primary submit-button">
+                        <span>Gửi đăng ký</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-column footer-about">
+                <a href="#trang-chu" class="logo footer-logo">
+                    <span class="logo-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </span>
+                    <span>IT CLUB</span>
+                </a>
+
+                <p>
+                    Kết nối đam mê, phát triển kỹ năng và cùng nhau kiến tạo
+                    tương lai bằng công nghệ.
+                </p>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" aria-label="Discord">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Về CLB</h3>
+                <a href="#gioi-thieu">Giới thiệu</a>
+                <a href="#lich-hoat-dong">Hoạt động</a>
+                <a href="#dang-ky">Thành viên</a>
+                <a href="#dieu-khoan">Điều khoản</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Liên kết</h3>
+                <a href="#trang-chu">Trang chủ</a>
+                <a href="#gioi-thieu">Sứ mệnh</a>
+                <a href="#lich-hoat-dong">Sự kiện</a>
+                <a href="#dang-ky">Đăng ký</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Liên hệ</h3>
+                <a href="mailto:hello@itclub.vn">
+                    <i class="fa-regular fa-envelope"></i>
+                    hello@itclub.vn
+                </a>
+                <a href="tel:0123456789">
+                    <i class="fa-solid fa-phone"></i>
+                    0123 456 789
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Tòa nhà A, Đại học Công nghệ
+                </a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© 2026 IT CLUB. All rights reserved.</p>
+            <p>Made with <span>♥</span> by IT CLUB</p>
+        </div>
+    </footer>
+
+</body>
+</html>
